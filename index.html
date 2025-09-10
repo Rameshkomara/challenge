@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sara Hospital - Health Care</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f9ff;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #4facfe, #00f2fe);
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav button {
+      background: white;
+      color: #0077b6;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav button:hover {
+      background: #0077b6;
+      color: white;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px;
+      background: linear-gradient(90deg, #e0f7fa, #f1f8e9);
+    }
+
+    .hero img {
+      width: 350px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #00796b;
+    }
+
+    .services {
+      text-align: center;
+      padding: 50px 20px;
+      background: #fdfdfd;
+    }
+
+    .services h2 {
+      color: #1565c0;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .service-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+      color: #0288d1;
+    }
+
+    footer {
+      background: #0288d1;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Welcome to Sara Hospital</h1>
+    <p>Your Health, Our Priority</p>
+    <nav>
+      <button onclick="scrollToSection('services')">Our Services</button>
+      <button onclick="scrollToSection('contact')">Contact Us</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Trusted Health Care for Your Family</h2>
+      <p>At Sara Hospital, we provide world-class healthcare facilities with modern technology and experienced doctors. Your well-being is our mission.</p>
+    </div>
+    <img src="https://img.freepik.com/free-photo/doctor-nurse-discussing-digital-tablet-hospital_107420-84758.jpg" alt="Hospital care">
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>Our Health Care Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <img src="https://img.freepik.com/free-photo/smiling-doctor-with-stethoscope_23-2147896187.jpg" alt="General Checkup">
+        <h3>General Checkups</h3>
+        <p>Routine health examinations for all age groups.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.freepik.com/free-photo/medical-equipment-modern-operating-room_107420-65967.jpg" alt="Surgery">
+        <h3>Surgery</h3>
+        <p>Modern operation theatres with expert surgeons.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.freepik.com/free-photo/close-up-cardiologist-doctor-holding-heart_1150-21091.jpg" alt="Cardiology">
+        <h3>Cardiology</h3>
+        <p>Advanced treatments for heart-related conditions.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.freepik.com/free-photo/laboratory-technician-doing-blood-test_23-2149370738.jpg" alt="Diagnostics">
+        <h3>Diagnostics</h3>
+        <p>Accurate lab tests and modern diagnostic facilities.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p><b>Contact Us:</b> info@sarahospital.com | +91 98765 43210</p>
+    <p>123, Health Street, City, Country</p>
+    <p>&copy; 2025 Sara Hospital. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
